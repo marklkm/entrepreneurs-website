@@ -2,7 +2,7 @@ use Rack::Static,
 
 
 :urls => ["/images", "/assets/js", "/assets/css", "/assets/sass","/assets/fonts"],
-:root => "."
+:root => "./"
 
 run lambda { |env|
   [
