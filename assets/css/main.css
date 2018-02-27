@@ -2601,3 +2601,46 @@
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+.out_circle {
+  float: left;
+  margin: 0 5px;
+  background-color: green;
+  border-radius: 50%;
+  height: 4em;
+  width: 4em;
+}
+
+.dot {
+  position: relative;
+  top: .65em;
+  left: .65em;
+  height: 1.75em;
+  width: 1.75em;
+  border-radius: 50%;
+  background-color: #E32636;
+  border: .5em solid white;
+  z-index: 2;
+}
+
+
+.target {
+  height: 4em;
+  line-height: 4em;
+  font: bold 4em helvetica;
+}
+
+em {
+  position: relative;
+  bottom: .2em;
+  right: 1em;
+  display: inline-block;
+  font: bold .1em helvetica;
+  border: 1px solid #000;
+  border-radius: 50%;
+  height: 12em;
+  width: 12em;
+  text-align: center;
+  line-height: 1.2em;
+}
