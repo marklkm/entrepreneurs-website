@@ -35,40 +35,70 @@
 				</div>
 
 			<!-- Main -->
-				<div id="main-wrapper">
-					<div class="container">
-						<div id="content">
+							<div id="main-wrapper">
+								<div class="container">
+									<div class="row 200%">
+										<div class="8u 12u$(medium)">
+											<div id="content">
 
-							<!-- Content -->
-								<article>
+												<!-- Content -->
+													<article>
 
-									<h2>Comments</h2>
+														<h2>Comments</h2>
 
-									<h3>What kind of comments are we looking for?</h3>
+														<div id="disqus_thread"></div>
+														<script>
 
-                  <p>Articulate, well-informed comments that are
-                    relevant and we welcome your advice, your criticism and insights.
-                  <p>
+														/**
+														*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+														*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+														/*
+														var disqus_config = function () {
+														this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+														this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+														};
+														*/
+														(function() { // DON'T EDIT BELOW THIS LINE
+														var d = document, s = d.createElement('script');
+														s.src = 'https://entrepreneurs-2.disqus.com/embed.js';
+														s.setAttribute('data-timestamp', +new Date());
+														(d.head || d.body).appendChild(s);
+														})();
+														</script>
+														<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-                  <p>
-                    No personal attacks, obscenity, vulgarity,
-                    profanity (including expletives and letters followed by dashes).
-                  </p>
 
-									<h2>Start Comments</h2>
+													</article>
 
-                  <!-- DISQUS COMMENTS -->
+											</div>
+										</div>
+										<div class="4u 12u$(medium)">
+											<div id="sidebar">
 
+												<!-- Sidebar -->
+													<section>
+														<h3>Entrepreneurs</h3>
+														<p>This is the comment section for the Springboard+ Entrepreneur Programme. </p>
+														<footer>
+															<a href="http://www.irishtimestraining.com/springboard-entrepreneurs-programme-2/" target="_blank" class="button icon fa-info-circle">Find out more</a>
+														</footer>
+													</section>
 
-<!-- END DISQUS -->
+													<section>
+														<h3>Entrepreneur Info.</h3>
+														<ul class="style2">
+															<li><a href="https://www.newfrontiers.ie/" target="_blank">New Frontiers</a></li>
+															<li><a href="https://www.localenterprise.ie/" target="_blank">Local Enterprise Office</a></li>
+															<li><a href="http://www.launchbox.ie/" target="_blank">LaunchBox</a></li>
+															<li><a href="http://www.innovators.ie/" target="_blank">UCD Innovation Academy</a></li>
+														</ul>
+													</section>
 
-
-
-								</article>
-
-						</div>
-					</div>
-				</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
         <!-- Footer -->
   				<div id="footer-wrapper">
@@ -125,8 +155,9 @@
   											<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
   											<li><a href="#" class="icon fa-whatsapp"><span class="label">Whatsapp</span></a></li>
   										</ul>
-  										<p>Our WhatsApp Group:<br />
-  										#Entrepreneurs</p>
+											<p>Our WhatsApp Group:<br />
+											#Entrepreneurs <br />
+										<a href="/comments.html">ALL COMMENTS</a></p>
   									</section>
 
   							</div>
@@ -153,6 +184,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script id="dsq-count-scr" src="//entrepreneurs-2.disqus.com/count.js" async></script>
 
 	</body>
 </html>
