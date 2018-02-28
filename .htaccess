@@ -1,13 +1,5 @@
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteRune ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule ^([^/]+)/$ $1.html
-  RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
-  RewriteRule . /index.html [L]
-  RewriteRule (.*)$ /$1/ [R=301,L]
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 </IfModule>
