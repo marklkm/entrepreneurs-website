@@ -1,3 +1,7 @@
+.row.\32 00\% > * {
+    padding: 40px 0 0 20px;
+}
+
 .td-news {
   font-size: 13px;
   color: #878787;
@@ -51,5 +55,5 @@
   padding: 30px;
 }
 .news-section {
-  padding: 20px 10px;
+  padding: 20px 30px;
 }
