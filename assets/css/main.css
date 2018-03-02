@@ -1996,6 +1996,7 @@
 	#banner {
 		position: relative;
 		padding: 4.5em;
+		background : url(https://subtlepatterns.com/patterns/hoffman.png);
 	}
 
 		#banner h2 {
