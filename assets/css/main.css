@@ -2603,6 +2603,21 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* CSS for gallery page */
+
+.crop-img{
+  max-height:150px;
+  max-width:100%;
+  margin-bottom: 10px;
+}
+
+.large-img{
+  max-width:100%;
+  margin-top: 10px;
+}
+
+/* END */
+
 /*
 .out_circle {
   float: left;
