@@ -1856,6 +1856,12 @@
 
 /* Logo */
 
+	#trinity-logo {
+
+		margin-left: -2.25em;
+
+	}
+
 	#logo {
 		display: inline-block;
 	}
@@ -1886,9 +1892,11 @@
 
 	#nav {
 		position: absolute;
+		/* display: inline-block; */
 		right: 0;
 		top: 0;
 		font-size: 0.9em;
+		text-transform: uppercase;
 	}
 
 		#nav ul li {
