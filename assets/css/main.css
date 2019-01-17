@@ -1892,7 +1892,7 @@
 
 	#nav {
 		position: absolute;
-		/* display: inline-block; */
+		display: inline-block;
 		right: 0;
 		top: 0;
 		font-size: 0.9em;
