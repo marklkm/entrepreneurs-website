@@ -1,41 +1,143 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
-  font-family: arial;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
 }
-label, input {
+
+.wrapper {
+  margin: auto;
+  max-width: 960px;
   width: 100%;
 }
-/*
- User input
- */
-textarea {
-  width: 96%;
-  max-width: 96%;
-  min-width: 96%;
-  padding: 30px 2%;
-  height: 240px;
+
+.bmc {
+  display: grid;
+  grid: repeat(3, 200px) / repeat(10, 1fr);
 }
-.col-xs-12 > textarea {
-  height: 90px;
+
+.bmc,
+.bmc > div {
+  border: 1px solid;
+  background: #fff;
 }
-::-webkit-input-placeholder {
-  font-size: 20px;
-  color: black;
+
+.bmc > div {
+  display: grid;
+  position: relative;
+  gap: 10px;
+  grid-template-rows: 30px;
+  grid-auto-rows: 65px;
+  padding: 8px;
 }
-:-moz-placeholder {
-  font-size: 20px;
-  color: black;
+
+.bmc > div:nth-child(8),
+.bmc > div:nth-child(9) {
+  grid: 30px / repeat(5, 1fr);
 }
-::-moz-placeholder {
-  font-size: 20px;
-  color: black;
+.bmc > div:nth-child(8) h3,
+.bmc > div:nth-child(9) h3 {
+  grid-column: 1 / -1;
 }
-:-ms-input-placeholder {
-  font-size: 20px;
-  color: black;
+
+
+.bmc > div:nth-child(8) .note,
+.bmc > div:nth-child(9) .note {
+  grid-column: span 2;
+}
+
+.bmc h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #5b5b5b;
+}
+
+.note {
+  padding: 15px;
+  background: #F33C61;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px 1px rgba(0,0,0,.2);
+}
+
+.note.green {
+  background: #79D12A;
+}
+
+.bmc > div:nth-child(1),
+.bmc > div:nth-child(4),
+.bmc > div:nth-child(7) {
+  grid-area: span 2 / span 2;
+}
+
+.bmc > div:nth-child(2),
+.bmc > div:nth-child(5) {
+  grid-column: span 2;
+}
+
+.bmc > div:nth-child(3) {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+}
+
+.bmc > div:nth-child(6) {
+  grid-column: 7 / span 2;
+  grid-row: 2;
+}
+
+.bmc > div:nth-child(8),
+.bmc > div:nth-child(9) {
+  grid-area: -2 / span 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:link {
+  text-decoration: none;
+  outline: 0;
+}
+
+a {
+  color: currentColor;
+  transition: .2s ease-in-out;
+}
+
+h1, h2, h3, h4 {
+  margin: .3em 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
 }
