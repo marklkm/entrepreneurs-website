@@ -1341,14 +1341,14 @@
 	}
 
 	a {
-		color: #005A6D;
+		color: #000000;
 		text-decoration: none;
 	}
 
 		a:hover {
-			text-decoration: none;
+			text-decoration: underline;
 			color: #0D0D0A;
-			transition: 1s;
+			transition: 2s;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
