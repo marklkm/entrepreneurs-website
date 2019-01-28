@@ -1,0 +1,99 @@
+
+
+@media print {
+   /* Remove unwanted elements */
+   #header,
+   #nav,
+   .noprint {
+      display: none;
+   }
+   /* Ensure the content spans the full width */
+   body,
+   article {
+      width: 100%;
+      margin: 0;
+      float: none;
+      /* Change text colour to black (useful for light text on a dark background) */
+      color: #000;
+      background: #fff;
+/*     how the font/text is printed visually...   */
+      font: 12pt Georgia, "helvetica", Verdana, serif;
+/* font: 16pt  "helvetica", Times, serif;
+line-height: 1.3;   */
+   }
+   .kathab{
+     font-family: 'Courier New', Courier, monospace, serif;
+      font-size:12px;
+   }
+
+   h1 {
+      color: #000;
+      background: none;
+   }
+   /* keep heders from printing at bottom pages */
+   h2,
+   h3 {
+      page-break-after: avoid;
+   }
+   /* prevent images from stretching across sheets */
+   img {
+      max-width: 100% !important;
+   }
+   /* keep articles on one page */
+   article {
+      page-break-before: always;
+   }
+   /* keep lists grouped together when printed */
+   ul,
+   img {
+      page-break-inside: avoid;
+   }
+   li {
+content: "» ";
+}
+   /* Improve colour contrast of links */
+   a {
+      font-weight: bolder;
+      text-decoration: none;
+   }
+   a:visited {
+      color: #00cc66;
+   }
+   /* display link url */
+   article a[href^="http"]:after {
+      content: " <" attr(href) "> ";
+   }
+   article a[href^="#"]:after {
+      content: "";
+   }
+   $a:after > img {
+      content: "";
+   }
+   a:not(:local-link):after {
+      content: " <" attr(href) "> ";
+   }
+} /*  END END END OF @media print */
+
+/* add margins */
+@page {
+   margin: 2cm;
+}
+
+/*  screen */
+@media screen and (min-width: 480px) {
+   body {
+      background-color: #fff;
+   }
+   font {
+      font-family: verdana, arial, sans-serif;
+   }
+}
+
+/*Force Background Images And Colors CSS4
+  */
+@media print and (color) {
+   * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+}
