@@ -1346,7 +1346,7 @@
 	}
 
 		a:hover {
-			text-decoration: underline;
+			text-decoration: none;
 			color: #0D0D0A;
 			transition: 2s;
 		}
