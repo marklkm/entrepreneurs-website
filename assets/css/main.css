@@ -1342,11 +1342,11 @@
 
 	a {
 		color: #000000;
+		font-weight: 600;
 		text-decoration: none;
 	}
 
 		a:hover {
-			text-decoration: none;
 			color: #0D0D0A;
 			transition: 2s;
 		}

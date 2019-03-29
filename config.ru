@@ -2,7 +2,7 @@ use Rack::Static,
 
 
 :urls => ["/images", "/assets/js", "/assets/css", "/assets/sass","/assets/fonts","/layouts",
-  "/creative-capital","/intellectual-property","/opportunity-generation", "/pathways", "/planning-venture", "/canvas", "/comments", "/news", 
+  "/creative-capital","/intellectual-property","/opportunity-generation", "/pathways", "/planning-venture", "/canvas", "/comments", "/news", "/lean-canvas", 
   "/man-structure", "/privacy-policy"],
 :root => "."
 
