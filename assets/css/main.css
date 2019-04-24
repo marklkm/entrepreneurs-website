@@ -1866,7 +1866,7 @@
 		display: inline-block;
 	}
 
-		#logo h1 {
+	#logo h1 {
 			background: #000;
 			color: #fff;
 			border-radius: 6px;
@@ -1879,7 +1879,7 @@
 			vertical-align: middle;
 		}
 
-		#logo span {
+	#logo span {
 			font-weight: 800;
 			line-height: 4.5em;
 			letter-spacing: 0.025em;
@@ -1887,6 +1887,10 @@
 			vertical-align: middle;
 			margin: 0 0 0 1.25em;
 		}
+
+	#logo:hover {
+		 transform: scale(1.2) rotate(5deg);
+	}
 
 /* Nav */
 
