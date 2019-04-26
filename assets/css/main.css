@@ -1888,10 +1888,6 @@
 			margin: 0 0 0 1.25em;
 		}
 
-	#logo:hover {
-		 transform: scale(1.2) rotate(5deg);
-	}
-
 /* Nav */
 
 	#nav {
