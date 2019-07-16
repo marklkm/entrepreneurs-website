@@ -1,13 +1,18 @@
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^.]+)$ $1.html [NC,L]
-RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-</IfModule>
+RewriteEngine on
 
-
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
+RewriteCond %{REQUEST_FILENAME} .php -
+f
+RewriteRule ^(.*) $1.php
+#RewriteRule ^([a-z]+)\/?$ $1.php
+[NC]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} .html
+-f
+RewriteRule ^(.*)$ $1.html
+#RwwriteRule ^([a-z]+)\/?$ $1.html
+[NC]
+
+</IfModule>
