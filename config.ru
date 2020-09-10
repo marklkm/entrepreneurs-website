@@ -1,8 +1,7 @@
 use Rack::Static,
 
 
-:urls => ["/images", "/assets/js", "/assets/css", "/assets/sass","/assets/fonts","/layouts",
-  "/creative-capital","/intellectual-property","/opportunity-generation", "/pathways", "/planning-venture", "/canvas", "/comments", "/news", "/lean-canvas", 
+:urls => ["/images", "/assets/js", "/assets/css", "/assets/sass","/assets/fonts","/layouts","/intellectual-property","/module3", "/module1", "/module2", "/canvas", "/comments", "/news", "/lean-canvas", 
   "/man-structure", "/privacy-policy"],
 :root => "."
 
