@@ -1997,14 +1997,19 @@
 
 	#banner {
 		position: relative;
-		padding: 4.5em;
+		padding: 6.5em;
+		background : url(/images/tcd-2020-bg.jpg);
 		/*background : url(https://subtlepatterns.com/patterns/hoffman.png);*/
-		background-color: #009fc7;
+		/*background-color: #009fc7;*/
+		background-position: center; /* Center the image */
+  		background-repeat: no-repeat; /* Do not repeat the image */
+  		background-size: cover; /* Resize the background image to cover the entire container */
 	}
 
 		#banner h2 {
-			font-size: 2.5em;
-			margin: 0.1em 0 0.35em 0;
+			font-size: 3.5em;
+			margin: 0.2em 0 0.35em -0.45em;
+
 		}
 
 		#banner p {
