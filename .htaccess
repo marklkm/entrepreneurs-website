@@ -1,12 +1,12 @@
-##<IfModule mod_rewrite.c>
+<IfModule mod_rewrite.c>
 
 RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
-#RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ $1.html [NC,L]
-#RewriteRule ^(.*)\.html$ /$1 [L,R=301]  
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]  
 
 ##Force SSL 
 
@@ -20,11 +20,5 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 
-# test remove HTML
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R]
 
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^ %{REQUEST_URI}.html [NC,L]
-
-##</IfModule>
+</IfModule>
