@@ -5,7 +5,7 @@ use Rack::Static,
 	"/assets/fonts","/layouts", "/module3",
  	"/module1", "/module2", "/canvas", "/comments", 
  	"/news", "/lean-canvas", 
-   "/privacy-policy", "/media", "/home"],
+   "/privacy-policy", "/media", "/home", "home"],
 :root => "."
 
 run lambda { |env|
