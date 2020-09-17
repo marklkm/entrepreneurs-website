@@ -6,6 +6,7 @@ use Rack::Static,
  	"/module1", "/module2", "/canvas", "/comments", 
  	"/news", "/lean-canvas", 
    "/privacy-policy", "/media", "/home", "home"],
+   
 :root => "."
 
 run lambda { |env|

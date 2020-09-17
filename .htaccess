@@ -1,4 +1,4 @@
-<IfModule mod_rewrite.c>
+##<IfModule mod_rewrite.c>
 
 RewriteEngine on
 
@@ -27,4 +27,4 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-</IfModule>
+##</IfModule>
