@@ -39,6 +39,20 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
+/* new css */
+p.drop-cap:first-letter {
+	float: left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 5.5em;
+    line-height: .72;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-right: 10px;
+  	color: #0E73B9;
+}
+
+/* end of new css */
 
 /* Box Model */
 
