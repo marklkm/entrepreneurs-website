@@ -2015,7 +2015,7 @@ p.drop-cap:first-letter {
 	#banner {
 		position: relative;
 		padding: 6.5em;
-		background : url(/images/tcd-2020-bg.jpg);
+		background : url(/images/tcd-banner.png);
 		/*background : url(https://subtlepatterns.com/patterns/hoffman.png);*/
 		/*background-color: #009fc7;*/
 		background-position: center; /* Center the image */
