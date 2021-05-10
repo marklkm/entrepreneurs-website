@@ -3,4 +3,4 @@
 
 #gem "rails"
 gem 'rack'
-ruby "2.7.2"
+ruby "2.7.3"
